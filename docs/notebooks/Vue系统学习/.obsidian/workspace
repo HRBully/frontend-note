@@ -1,0 +1,90 @@
+{
+  "main": {
+    "id": "9b4498dd23e1fbc9",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc6c5e1079b4832f",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a4287232f25bdff4",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb2add225e4379ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "864bb72b95c16fe3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "126f4dc184cd0b34",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "165669bf55b2b123",
+    "type": "split",
+    "children": [
+      {
+        "id": "02a55ee39413f51f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e5d7f3896e21a95f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "dc6c5e1079b4832f",
+  "lastOpenFiles": [
+    "04-模板语法.md"
+  ]
+}

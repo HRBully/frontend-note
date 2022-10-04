@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "2c6e0332e8a66230",
+    "type": "split",
+    "children": [
+      {
+        "id": "314adf5c5c2c241c",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "be74a69d135ef5fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "8675e818068b8e0b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f167a9e312543f8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8609f5ba521ebe2b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "211e6460843c8700",
+    "type": "split",
+    "children": [
+      {
+        "id": "3780d0fc4ede33d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e055612265fa0d1a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "314adf5c5c2c241c",
+  "lastOpenFiles": [
+    "docs/notebooks/Vue系统学习/04-模板语法.md",
+    "docs/notebooks/Vue系统学习/03-应用实例和组件实例.md",
+    "docs/notebooks/Vue系统学习/02-搭建开发环境.md",
+    "docs/notebooks/Vue系统学习/01-Vue基础知识.md",
+    "docs/notebooks/Axios/01-基本使用.md",
+    "docs/notebooks/Axios/02-封装axios.md"
+  ]
+}
