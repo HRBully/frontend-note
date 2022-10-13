@@ -50,7 +50,8 @@ fn("ned") // 我的名字叫做ned
 
 - 通过`export`导出**函数**或者**变量**，可以导出多个
 - 通过`export default 单个对象`只能导出单个`API`
-- 
 
 ## CommonJS
+
+使用`require`与`module.exports`进行模块化开发
 
