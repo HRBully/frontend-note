@@ -14,7 +14,7 @@ console.log(sidebar);
 module.exports = {
   title: "猪痞恶霸的blog",
   description: "前端小学生的学习笔记",
-  base: "/hogskin-blog/",
+  base: "/frontend-note/",
   theme: "reco",
   themeConfig: {
     nav: [
