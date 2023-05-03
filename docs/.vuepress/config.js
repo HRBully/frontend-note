@@ -4,7 +4,7 @@ const sidebar = hogskin("notebooks");
 sidebar.unshift(
   ...[
     {
-      title: "关于博客",
+      title: "关于笔记站",
       path: "/",
       collapsable: false, // 不折叠
     },
@@ -12,16 +12,17 @@ sidebar.unshift(
 );
 console.log(sidebar);
 module.exports = {
-  title: "猪痞恶霸的blog",
-  description: "前端小学生的学习笔记",
+  title: "猪痞恶霸的笔记站",
+  description: "莫听穿林打叶声，何妨吟啸且徐行",
   base: "/frontend-note/",
   theme: "reco",
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
       {
-        text: "猪痞恶霸的前端博客",
+        text: "HRBully",
         items: [
+          { text: "GitHub", link: "https://github.com/HRBully" },
           { text: "掘金", link: "https://juejin.cn/user/431430802343479" },
         ],
       },
