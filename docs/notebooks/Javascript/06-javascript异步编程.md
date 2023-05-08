@@ -211,3 +211,34 @@ pro.then(() => console.log(1)).then(() => console.log(2))  // 1 2
 
 ## 异步处理集合结构
 
+## 异步设定超时函数
+
+使用`promise.race`的特性，即传入数组内的所有异步集合，会返回第一个改变状态的promise，来实现一个超时函数的封装。
+
+```js
+function timeOutPromsie (fn,time) {
+  return  Promise.race([
+    fn(),
+    new Promise((resolve,reject) => {
+      setTimeout(() => {
+        reject('超时')
+      },time)
+    })
+  ])
+}
+let fn = () => {
+  return new Promise((resolve,reject) => {
+    setTimeout(() => {
+      resolve('成功')
+    },2000)
+  })
+}
+timeOutPromsie(fn,3000).then(res => {
+  console.log(res)
+}).catch(err => {
+  console.log(err)
+})
+```
+
+我们封装了`timeOutPromsie`，传入设定的限制目标函数与限制时间，其中`fn`函数必须是返回Promise实例的函数，当`Promise.race`开始执行的时候，`fn`内定时器，与限制时间的定时器同时挂起执行，当定时器快时，说明`fn`超过了限制时间，抛出问题，反之成功
+
