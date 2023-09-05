@@ -196,7 +196,7 @@ let pro = new Promise((resolve, reject) => resolve());
 pro.then(() => console.log(1)).then(() => console.log(2))  // 1 2
 ```
 
-没想到吧，因为`then`返回的依旧是一个期约对象，所以我们跨域继续`then`
+没想到吧，因为`then`返回的依旧是一个期约对象，所以我们可以继续`then`
 
 ### 手撕Promise理解异步实现
 
