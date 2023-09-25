@@ -101,3 +101,37 @@ module.exports = {
 npm install --save-dev rollup-plugin-babel @babel/core @babel/preset-env
 ```
 
+自定义`plugin`
+
+```js
+const babel = require('rollup-plugin-babel')
+function getComplier(opt) {
+  return babel({
+    babelrc: false,
+    presets: [
+      [
+        '@babel/preset-env',
+        {
+          modules: false,
+          targets: {
+            browsers: ['last 2 versions', 'IE 10']
+          },
+          loose: true
+        }
+      ]
+    ],
+    exclude: 'node_modules/**',
+  })
+}
+
+exports.getComplier = getComplier
+```
+
+三个配置文件可以使用这个`plugin`
+
+配置`polyfill`
+
+```js
+npm install --save core-js
+```
+
