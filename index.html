@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+const render = function(node, container) {
+  const el = document.createElement(node.type)
+  for(key in node.props) {
+    if(/^on/.test(key)) {
+      el.addEventListener(key.subStr(2).toLowerCase(), node.props[key])
+    }else {
+      el.setAttribute(key, node.props[key])
+    }
+  }
+  if(typeof node.children !== 'string') {
+    node.children.forEach(child => render(child, el))
+  }else {
+    el.innerHTML = node.children
+  }
+  container.appendChild(el)
+}
+</script>
+</html>
